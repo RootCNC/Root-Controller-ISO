@@ -10,7 +10,7 @@ Official repository for the Root CNC ESP32 GRBL Controller.
 
 - Preliminary Pin allocation can be found [here](ESP32_ROOT_4_PINOUT.xlsx) 
 
-**Expansion port Idea's **
+**Expansion port Idea's**
 1. Non critical Stepper motor control IE ATC movement, Tool head rotation
 2. AUX CNC controller (ATC Release, Probe clean (Air blast)) 
 3. Lighting control
