@@ -4,6 +4,8 @@
 
 Official repository for the Root CNC ESP32 GRBL Controller. 
 
+**This Project is currently in the concept phase and is likely to change to accomidate more features and other machines.**
+
 
 For Root CNC project information 
 visit [the website](https://rootcnc.com)
