@@ -8,7 +8,7 @@ The controller is designed to isolate the key area of the design to mintage any 
 
 ## Key features 
 1. 6 axis motion control (Axis ganging can be done via software - 18 digital outputs, can be repurposed)
-2. Wide input voltage range (9-30V)
+2. Wide input voltage range (9-36V)
 3. Wifi Support for remote control and job loading
 4. SD card
 5. 10 Isolated input (supporting NPN inductive switches and Standard NC/NO switches)
