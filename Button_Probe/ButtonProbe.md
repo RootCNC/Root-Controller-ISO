@@ -1,24 +1,23 @@
 <img align="right" width=175 src="https://github.com/RootCNC/Root-Controller-ISO/blob/master/Media/R_Logo.png" />
 
 # About
-At its core the Root controller is a ESP32 GRBL isolated motion controller (FluidNC). What makes this controller different is the focus of providing **isolated IO** to the **CNC controller**. The controller is designed to accommodate a wide range of operating conditions and machines, to provide ultimate flexibility (its not just a Root CNC Controller).
-
-The controller is designed to isolate the key area of the design to mintage any nuisance issues when operating in a electrically noisy environment. The design isolates the following areas from one another. Steppers driver outputs (achieved by using externally OPTO isolated drivers), USB, Relays, MOSFETs and RS485. Perfectly suited for the larger CNC machines. 
-
-![Root Controller Render ](https://github.com/RootCNC/Root-Controller-ISO/blob/master/Media/Render_1.JPG)
+Easy way to add convenient buttons to your CNC Machine. It offers buttons for common actions like, Hold, Start, Macro. it also offers a easy accessible probe point via 4mm banana plugs
+![Root Controller Render ](https://github.com/RootCNC/Root-Controller-ISO/blob/master/Button_Probe/20220202_214248.jpg)
 
 ## Key features 
-1. Easy breakout and wiring of requently used buttons and probe mount
+1. Easy breakout and wiring of frequently used buttons and probe mount
 2. Built in current limit resistors for LED button
+
 
 ## Require Parts
 The product requires parts to be sourced or printed externally
 1. Single Pole Single Throw (SPST) Momentary LED Push Button 16mm Dia x3
-2. 4mm Bannana terminals x2
+2. 4mm Banana terminals x2
 3. Printed case (Top and bottom)
 4. 3mm insert nuts (The kind you use the soldering Iron with) x6
 5. 3mm x 6mm Bolts x4
 6. 3mm x 10mm Bolts x2
+
 
 ## Purchase
 The Root Controller Buttons can be purchased on the Root CNC store
