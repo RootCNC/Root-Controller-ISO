@@ -4,6 +4,7 @@
 At its core the Root controller is a ESP32 GRBL isolated motion controller (FluidNC). What makes this controller different is the focus of providing **isolated IO** to the **CNC controller**. The controller is designed to accommodate a wide range of operating conditions and machines, to provide ultimate flexibility (its not just a Root CNC Controller).
 
 The controller is designed to isolate the key area of the design to mintage any nuisance issues when operating in a electrically noisy environment. The design isolates the following areas from one another. Steppers driver outputs (achieved by using externally OPTO isolated drivers), USB, Relays, MOSFETs and RS485. Perfectly suited for the larger CNC machines. 
+
 ![Root Controller Render ](https://github.com/RootCNC/Root-Controller-ISO/blob/master/Media/Render_1.JPG)
 
 ## Key features 
