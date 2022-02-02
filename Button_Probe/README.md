@@ -2,7 +2,7 @@
 
 # About
 Easy way to add convenient buttons to your CNC Machine. It offers buttons for common actions like, Hold, Start, Macro. it also offers a easy accessible probe point via 4mm banana plugs
-![Root Controller Render ](https://github.com/RootCNC/Root-Controller-ISO/blob/master/Button_Probe/20220202_214248.jpg)
+![Root Controller Render ](https://github.com/RootCNC/Root-Controller-ISO/blob/master/Button_Probe/20220202_214222.jpg)
 
 ## Key features 
 1. Easy breakout and wiring of frequently used buttons and probe mount
