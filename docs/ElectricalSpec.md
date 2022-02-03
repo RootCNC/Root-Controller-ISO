@@ -10,7 +10,7 @@ Power is applied through its own dedicated fused port.
 |--|--|--|--|--|
 | Vin (`V` wrt `0V_V`) | 9 |24|36|V|
 |Current (Fuse Protected) (*1)|  |0.86|(*2)|A|
-|Input Isolation voltage  [`V` vs `0V`]| 1.5 |||KV
+|Input Isolation voltage  [`V` vs `0V`(*3)]| 1.5 |||KV
 -   (*1) – This is current draw of the Root CNC controller including worst case power export via output pins. This does not induce the exported power on V pins (Such as powering inductive probes)
 - (*2) - Installed fuse is TBD
 -  (*3) – 0V is the isolated floating voltage on the Root CNC controller – Do Not connect this to chassis
@@ -50,7 +50,7 @@ This section is denoted by `V_RS` and `0V_RS` respectively for the Power in and 
 * (2) RS485 does not contain a bus termination resistor - place provisioned. The Isolating RS485 has internal thresholds to detect logic levels. 
 
 # Digital Output
-Isolation is achieved by used Opto-Isolated Stepper motor drivers
+Isolation is achieved by using Opto-Isolated Stepper motor drivers
 
 |**Parameter**|**Min**|**Typ**|**Max**|**Unit**|
 |--|--|--|--|--|
@@ -61,12 +61,12 @@ Isolation is achieved by used Opto-Isolated Stepper motor drivers
 |VOH High-level output voltage (*2)|3.8|||V
 |VOL Low-level output voltage (*3)|||0.55|V
 
--   (*1) This parameter max the Root CNC controller extremely well suited to drive opto-isolated stepper motor drivers (special sauce)
+-   (*1) This parameter makes the Root CNC controller extremely well suited to drive opto-isolated stepper motor drivers (special sauce)
 -   (*2) – Over full operating specification and at max current draw (-32mA)
 -   (*3) – Over full operating specification and at max current draw (32mA)
 
 # MOSFET Isolation
-The Root Controller provides three MOSFET controller switches. These switches have their own dedicated input power supply and be driven from a separate PSU or the same PSU as `V` to allow for greater flexibility.
+The Root Controller provides three MOSFET controller switches. These switches have their own dedicated input power supply and can be driven from a separate PSU or the same PSU as `V` to allow for greater flexibility.
 
 | **Parameter** | **Min** | **Typ** | **Max** |**Unit**|
 |--|--|--|--|--|
