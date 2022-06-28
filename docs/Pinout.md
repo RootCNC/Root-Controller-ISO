@@ -37,14 +37,14 @@
 |**Port**| **Description**|
 |--|--|
 |GPIO12	|SHIFT_DATA    |
-|GPIO13	|FET_2         |
+|GPIO13	|FET_3         |
 |GPIO14	|C-PIN         |
-|GPIO15	|Y-PIN         |
+|GPIO15	|Z-PIN		   |
 |GPIO16	|RS_485_RX     |
 |GPIO17	|RS_485_TX     |
 |GPIO18	|SD_CLK        |
 |GPIO19	|SD_MISO       |
-|GPIO2	|Z-PIN         |
+|GPIO2	|Y-PIN         |
 |GPIO21	|SHIFT_STR_CLK |
 |GPIO22	|SHIFT_CLK     |
 |GPIO23	|SD_MOSI       |
@@ -52,10 +52,11 @@
 |GPIO26	|X-PIN         |
 |GPIO27	|PROBE-PIN     |
 |GPIO32	|B-PIN         |
-|GPIO33	|FET_3         |
+|GPIO33	|FET_2         |
 |GPIO34	|GRBL_MACRO    |
 |GPIO35	| A-PIN        |
 |GPIO4	|RS_485_DE_RE  |
 |GPIO5	|SD_CS         |
 |GPIO39	|GRBL_START    |
 |GPIO36	|GRBL_HOLD     |
+       
