@@ -59,4 +59,6 @@
 |GPIO5	|SD_CS         |
 |GPIO39	|GRBL_START    |
 |GPIO36	|GRBL_HOLD     |
-       
+
+
+Minor change
