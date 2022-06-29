@@ -3,6 +3,7 @@ on:
     push:
         paths:
         - 'docs/Pinout.md'
+        - 'docs/ElectricalSpec.md'
 jobs:
   copy-file:
     runs-on: ubuntu-latest
@@ -10,12 +11,24 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Pushes test file
+    - name: Pushes Pinout file
       uses: dmnemec/copy_file_to_another_repo_action@main
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
         source_file: 'docs/Pinout.md'
+        destination_repo: 'RootCNC/Wiki'
+        destination_folder: 'RootControllerISO'
+        user_email: 'rcnc3d@gmail.com'
+        user_name: 'RootCNC'
+        commit_message: 'A custom message for the commit'
+        
+    - name: Pushes Elec Spec file
+      uses: dmnemec/copy_file_to_another_repo_action@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source_file: 'docs/ElectricalSpec.md'
         destination_repo: 'RootCNC/Wiki'
         destination_folder: 'RootControllerISO'
         user_email: 'rcnc3d@gmail.com'
