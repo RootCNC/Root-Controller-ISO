@@ -1,5 +1,7 @@
 # Root Controller ISO Electrical characteristics
-This section is split up into the isolation zones of the controller
+This section is split up into the isolation zones of the controller.
+
+For more information on the different isolation zones, please see the Wiki page tilted "Power" [Link Here](https://wiki.rootcnc.com/en/RootControllerPower)
 
 ## Primary PSU
 ### PSU
