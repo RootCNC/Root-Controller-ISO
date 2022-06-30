@@ -1,9 +1,6 @@
 name: Copy MD files to Wiki
 on:
     push:
-        paths:
-        - 'docs/Pinout.md'
-        - 'docs/ElectricalSpec.md'
 jobs:
   copy-file:
     runs-on: ubuntu-latest
@@ -11,26 +8,15 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Pushes Pinout file
-      uses: dmnemec/copy_file_to_another_repo_action@main
+    - name: Pushes Doc folder to wiki
+      uses: datalbry/copy_folder_to_another_repo_action@1.0.0
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
-        source_file: 'docs/Pinout.md'
+        source_folder: 'docs'
         destination_repo: 'RootCNC/Wiki'
-        destination_folder: 'RootControllerISO'
+        destination_branch: 'main'
+        destination_folder: 'Root_Controller_ISO'
         user_email: 'rcnc3d@gmail.com'
         user_name: 'RootCNC'
-        commit_message: 'A custom message for the commit'
-        
-    - name: Pushes Elec Spec file
-      uses: dmnemec/copy_file_to_another_repo_action@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-      with:
-        source_file: 'docs/ElectricalSpec.md'
-        destination_repo: 'RootCNC/Wiki'
-        destination_folder: 'RootControllerISO'
-        user_email: 'rcnc3d@gmail.com'
-        user_name: 'RootCNC'
-        commit_message: 'A custom message for the commit'
+        commit_msg: 'Update the Root Controller ISO Doc files.'
