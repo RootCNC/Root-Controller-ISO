@@ -16,7 +16,7 @@ jobs:
         source_folder: 'docs'
         destination_repo: 'RootCNC/Wiki'
         destination_branch: 'main'
-        destination_folder: 'Root Controller ISO'
+        destination_folder: 'Root-Controller-ISO'
         user_email: 'rcnc3d@gmail.com'
         user_name: 'RootCNC'
         commit_msg: 'Update the Root Controller ISO Doc files.'
