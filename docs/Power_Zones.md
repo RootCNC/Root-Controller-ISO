@@ -21,7 +21,7 @@ The controller has the following major areas of isolation:
 5. `Relay zone` - three relay outputs are inherently isolated from everything else and between them self.
 6. `USB ISO` - the usb type C connector is isolated from the controller to ensure. This is perfect to ensure your expensive laptop or CNC computer is not directly attached to your machine, this help mitigate fault propagation effecting you machine. 
 
-![powerscheme.png](/powerscheme.png =50%x)
+<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/powerscheme.png" width="600">
 
 > To ensure optimal performance and noise immunity - please ensure the current return paths and loops are reduced and power zone references are not connected together. E.g. avoid connecting `0V` to `0V_V` 
 {.is-warning}
@@ -35,5 +35,4 @@ This power supply is internally fused for added protection.
 The minimum PSU capacity should greater then `8 watts` to power the controller.
 
 The voltage applied to the controller through this connector is also applied to the controllers inputs power pins. This is useful when powering external sensors, such as inductive probes. The inputs power pins are fused with the same fuse as the main input power connector. 
-
-![powerinput.png](/powerinput.png =50%x)
+<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/powerinput.png" width="600">

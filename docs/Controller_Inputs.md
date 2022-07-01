@@ -31,16 +31,15 @@ Each input can have two sensors/ switches connected to it, these are typically u
 ### Inductive Probe Wiring 
 > NPN Inductive Switch sensor ONLY {.is-info}
 
-![inductive_probe.png](https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/inductive_probe.png)
+<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/inductive_probe.png" width="600">
 ### Inductive Probe Min & Max Wiring 
 Image comming soon
 ### Basic Endstop Wiring
 In this basic configuration, either NO (Normally Open) Or NC (Normally Closed) switches can be used
-![micro-switch.png](https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/micro-switch.png)
+<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/micro-switch.png" width="600">
 ### Endstop wiring Min & Max (NO)
-![micro-switch-no.png](https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/micro-switch-no.png)
+<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/micro-switch-no.png" width="600">
 ### Endstop wiring Min & Max (NC)
-![micro-switch-nc.png](https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/micro-switch-nc.png)
-<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/micro-switch-nc.png" width="100">
+<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/micro-switch-nc.png" width="600">
 > Please note - NC switches are not recommend on `Y_lim`. IF YOU INTEND TO FLASH THE ROOT CONTROLLER WHILST BEING INSTALLED IN A SYSTEMS. pulling these pins LOW stops the programming routing. If you do use NC switched: then, please ensure these are disconnected piror to programming. 
 {.is-warning}

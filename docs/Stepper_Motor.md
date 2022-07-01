@@ -17,7 +17,8 @@ Some drivers might expose both anode and cathode per input, if this is the case 
 
 # Stepper Driver Outputs
 The Root controller support six software configurable stepper motor outputs. These are accessable via a 4 port plug.
-![sleeper_output_ports.png](/sleeper_output_ports.png =50%x)
+
+<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/sleeper_output_ports.png" width="600">
 
 
 When not using these ports for the stepper motor controller, then the remaining ports can be reconfigured in software to support discrete outputs.
@@ -26,12 +27,12 @@ When not using these ports for the stepper motor controller, then the remaining 
 > The Root Controller has two configurable jumpers to set its reference point for either common anode or cathode, please ensure these are correctly configured. More information below.  {.is-info} 
 
 The Root controller comes in two options at the time of purchase (the expansion port can be purchased at a later date to add extra inputs and output - the Root 3 onwards requires the full Root controller ISO). 
-![refset_port.png](/refset_port.png =50%x)
+<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/refset_port.png" width="600">
 Both headers on the Root Controller need to be set correctly in order for correct operation, these are denoted as `ref set` on the controller label. You can mix the top and bottom reference points but you’ll need to ensure the three outputs per layer are set correctly with the corresponding outputs. Its recommended to set the ref set points to same configurations.
 
 - Ref set 1 - sets the reference point for axis outputs X, Y, Z
 - Ref set 2 - sets the reference point for axis outputs A, B, C
-![refset_layers.png](/refset_layers.png =50%x)
+<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/refset_layers.png" width="600">
 > Please note these outputs are software configurable. The Root 3 onwards will use either axis outputs of A, B, C to be the second Y (YII) axis. If you are planning on using the root controller for other style of machines; the software supports up to two outputs per axis. For example the MPCNC Which has XII and YII which will use ports A,B.{.is-info} 
 
 > Beta card can accommodate both common anode and common cathode by default{.is-info} 
@@ -45,7 +46,7 @@ Below is a list of known external motor drivers to work in the common anode conf
 * DM332
 ### Example wiring
 Here is an example wiring configuration for a common anode setup
-![stepper-motor-anode.png](/stepper-motor-anode.png =50%x)
+<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/stepper-motor-anode.png" width="600">
 
 ## 0V reference (Common Cathode)
 Be,ow is a list of known external motor driver to work in the common cathode arrangement
@@ -57,4 +58,4 @@ Be,ow is a list of known external motor driver to work in the common cathode arr
 * DM860
 ### Example Wiring
 Here is an example wiring configuration for a common Cathod setup:
-![stepper-motor-cathode.png](/stepper-motor-cathode.png =50%x)
+<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/stepper-motor-cathode.png" width="600">

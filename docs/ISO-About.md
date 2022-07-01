@@ -13,7 +13,7 @@ At its core the Root controller is a ESP32 GRBL isolated motion controller (Flui
 
 The controller is designed to isolate the key area of the design to mitigate any nuisance issues when operating in an electrically noisy environment. The design isolates the following areas from one another: Steppers driver outputs (achieved by using externally OPTO isolated drivers), USB, Relays, MOSFETs and RS485. Perfectly suited for the larger CNC machines. 
 
-![20220202_204658.jpg](/20220202_204658.jpg =50%x)
+<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/20220202_204658.jpg" width="600">
 ## Purchase
 The Root Controller ISO can be purchased on the Root CNC store
 [GOTO SHOP](https://rootcnc.com/product-category/electronics/)
@@ -33,6 +33,12 @@ The Root Controller ISO can be purchased on the Root CNC store
 ## Demo Video
 > Click Image to load youtube video
 {.is-info}
+
+ <iframe width="560" height="315"
+src="http://www.youtube.com/watch?v=vrsv_Eusyqc" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
 
 [![Demo Video](http://img.youtube.com/vi/vrsv_Eusyqc/0.jpg)](http://www.youtube.com/watch?v=vrsv_Eusyqc "Video Title")
 

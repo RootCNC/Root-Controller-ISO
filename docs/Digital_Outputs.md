@@ -27,7 +27,7 @@ MOSFET control
 - FET_2 - on/off control 
 - FET_3 - on/off control
 
-![mosfetoutput.png](/mosfetoutput.png =50%x)
+<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/mosfetoutput.png" width="600">
 > Please note depending on the software configuration, not all MOSFET or RELAY output can be used at the same time.
 {.is-info}
 
@@ -42,7 +42,7 @@ Relay control
 - R_2 - on/off control 
 - R_3 - on/off control
 
-![relayoutput.png](/relayoutput.png =50%x)
+<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/relayoutput.png" width="600">
 > Please note depending on the software configuration, not all MOSFET or RELAY output can be used at the same time.
 {.is-info}
 
@@ -53,8 +53,7 @@ Laser/ Spindle control
 - EN - on/off control
 - DIR - on/off control 
 - PWM - on/off control & PWM Control
-![laserport.png](/laserport.png =50%x)
-
+<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/laserport.png" width="600">
 
 > For spindle control, it is advised you use a MODBUS/ RS485 VFD and communicated through the isolated spindle interface.
 {.is-info}
