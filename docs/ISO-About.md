@@ -1,6 +1,6 @@
 ---
-title: Root Controller ISO About
-description: Controller About
+title: About
+description: Root Controller ISO About
 published: true
 date: 2022-03-18T14:52:57.756Z
 tags: cnc controller, root controller, motion controller, isolation

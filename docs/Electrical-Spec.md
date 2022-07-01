@@ -1,3 +1,12 @@
+---
+title: Electrical Specification	
+description: Root Controller ISO Electrical Specification
+published: true
+date: 2022-05-29T20:56:11.673Z
+tags: root controller
+editor: markdown
+dateCreated: 2022-03-14T22:22:48.038Z
+---
 # Root Controller ISO Electrical characteristics
 This section is split up into the isolation zones of the controller.
 

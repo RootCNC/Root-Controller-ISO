@@ -1,6 +1,6 @@
 ---
-title: Root Controller Outputs
-description: Output options
+title: Outputs
+description: Root Controller ISO Outputs
 published: true
 date: 2022-03-18T16:33:14.847Z
 tags: root controller

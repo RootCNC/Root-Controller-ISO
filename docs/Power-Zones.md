@@ -1,6 +1,6 @@
 ---
-title: Root Controller Isolated Power
-description: Power Islands on the root controller
+title: Isolated Power Zones
+description: Power Islands on the Root Controller ISO
 published: true
 date: 2022-03-18T15:24:18.219Z
 tags: root controller

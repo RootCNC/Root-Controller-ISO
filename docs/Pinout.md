@@ -1,3 +1,12 @@
+---
+title: Pin numbering
+description: Root Controller ISO Program pin numbers
+published: true
+date: 2022-05-29T20:56:11.673Z
+tags: root controller
+editor: markdown
+dateCreated: 2022-03-14T22:22:48.038Z
+---
 # Root Controller ISO Pin mapping
 
 > This list support the revision 2.0 Onwards. If you're after an earlier version pin out please see the version history on Github 

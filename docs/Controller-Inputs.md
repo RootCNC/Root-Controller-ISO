@@ -1,6 +1,6 @@
 ---
-title: Controller Inputs
-description: Root Controller Input Section
+title: Inputs
+description: Root Controller ISO Input Section
 published: true
 date: 2022-05-29T20:56:11.673Z
 tags: root controller
@@ -45,5 +45,4 @@ In this basic configuration, either NO (Normally Open) Or NC (Normally Closed) s
 
 ### Endstop wiring Min & Max (NC)
 <img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/micro-switch-nc.png" width="600">
-> Please note - NC switches are not recommend on `Y_lim`. IF YOU INTEND TO FLASH THE ROOT CONTROLLER WHILST BEING INSTALLED IN A SYSTEMS. pulling these pins LOW stops the programming routing. If you do use NC switched: then, please ensure these are disconnected piror to programming. 
-{.is-warning}
+> Please note - NC switches are not recommend on `Y_lim`. IF YOU INTEND TO FLASH THE ROOT CONTROLLER WHILST BEING INSTALLED IN A SYSTEMS. pulling these pins LOW stops the programming routing. If you do use NC switched: then, please ensure these are disconnected piror to programming. {.is-warning}
