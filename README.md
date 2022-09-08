@@ -5,25 +5,27 @@ At its core the Root controller is a ESP32 GRBL isolated motion controller (Flui
 
 The controller is designed to isolate the key area of the design to mitigate any nuisance issues when operating in an electrically noisy environment. The design isolates the following areas from one another: Steppers driver outputs (achieved by using externally OPTO isolated drivers), USB, Relays, MOSFETs and RS485. Perfectly suited for the larger CNC machines. 
 
-![Root Controller Render ](https://github.com/RootCNC/Root-Controller-ISO/blob/master/Media/Render_1.JPG)
+![Root Controller Rev 2.1 ](https://github.com/RootCNC/Root-Controller-ISO/blob/master/Media/ex_20220321_224956.jpg)
 
 ## Key features 
-1. 6 axis motion control (Axis ganging can be done via software - 18 digital outputs, can be repurposed)
-2. Wide input voltage range (9-36V)
-3. Wifi or bluetooth support for remote control and job loading
-4. SD card
-5. 10 isolated inputs (supporting NPN inductive switches and Standard NC/NO switches)
-6. 3 isolated Relay outputs for switching high voltage outputs, say a compressor
-7. 3 isolated MOSFET, perfect for driving solenoids for coolant or mist
-8. Dedicated Laser output port. 
-9. Isolated USB
-10. Isolated RS485 (Modbus serial port)
+1. **6 axis motion control** (Axis ganging can be done via software - 18 digital outputs, can be repurposed)
+2. **Wide input voltage** range (9-36V)
+3. **Wifi or bluetooth** support for remote control and job loading
+4. **SD card**
+5. **10 isolated inputs** (supporting NPN inductive switches and Standard NC/NO switches)
+6. **3 isolated Relay** outputs for switching high voltage outputs, say a compressor
+7. **3 isolated MOSFET**, perfect for driving solenoids for coolant or mist
+8. Dedicated **Laser output port**. 
+9. **Isolated USB**
+10. **Isolated RS485** (Modbus serial port)
 
 ## Purchase
 The Root Controller ISO can be purchased on the Root CNC store
 [GOTO SHOP](https://rootcnc.com/product-category/electronics/)
 ## Electrical Specification 
 Details can be found [**here**](https://github.com/RootCNC/Root-Controller-ISO/blob/master/docs/ElectricalSpec.md). If you require additional information I have missed, please contact me and I'll get it added.
+## Wiring information
+For more information on how to wire and connect the Root Controller to external drives or sensors. please see the Wiki site. [Link to the WIKI](https://wiki.rootcnc.com/)
 ## Software pinouts
 To control the hardware the pinout of peripherals needs to be known, the link **[here](https://github.com/RootCNC/Root-Controller-ISO/blob/master/docs/Pinout.md)** is a convenient way to map Input and Output to the software.
 ## Mechanical dimensions
