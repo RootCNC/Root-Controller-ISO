@@ -27,7 +27,7 @@ Details can be found [**here**](https://github.com/RootCNC/Root-Controller-ISO/b
 ## Software pinouts
 To control the hardware the pinout of peripherals needs to be known, the link **[here](https://github.com/RootCNC/Root-Controller-ISO/blob/master/docs/Pinout.md)** is a convenient way to map Input and Output to the software.
 ## Mechanical dimensions
-![Root Controller Rev 2.0 dimensions](https://github.com/RootCNC/Root-Controller-ISO/blob/master/Media/Dimensions_Rev2.0.PNG)
+![Root Controller Rev 2.0 dimensions](https://github.com/RootCNC/Root-Controller-ISO/blob/master/Media/Dimensions_Rev2.1.PNG)
 ## PCB layout
 ![Root Controller Rev 2.0 PCB Layout](https://github.com/RootCNC/Root-Controller-ISO/blob/master/Media/IO_Layout.svg)
 
