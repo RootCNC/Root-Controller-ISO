@@ -13,23 +13,19 @@ At its core the Root controller is a ESP32 GRBL isolated motion controller (Flui
 
 The controller is designed to isolate the key area of the design to mitigate any nuisance issues when operating in an electrically noisy environment. The design isolates the following areas from one another: Steppers driver outputs (achieved by using externally OPTO isolated drivers), USB, Relays, MOSFETs and RS485. Perfectly suited for the larger CNC machines. 
 
-<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/20220202_204658.jpg" width="600">
+![Root Controller Rev 2.1 ](https://github.com/RootCNC/Root-Controller-ISO/blob/master/Media/ex_20220321_224956.jpg)
 
-## Purchase
-The Root Controller ISO can be purchased on the Root CNC store
-[GOTO SHOP](https://rootcnc.com/product-category/electronics/)
-
-### Key features 
-1. 6 axis motion control (Axis ganging can be done via software - 18 digital outputs, can be repurposed)
-1. Wide input voltage range (9-36V)
-1. Wifi or bluetooth support for remote control and job loading
-1. SD card
-1. 10 isolated inputs (supporting NPN inductive switches and Standard NC/NO switches)
-1. 3 isolated Relay outputs for switching high voltage outputs, say a compressor
-1. 3 isolated MOSFET, perfect for driving solenoids for coolant or mist
-1. Dedicated Laser output port. 
-1. Isolated USB
-1. Isolated RS485 (Modbus serial port)
+## Key features 
+1. **6 axis motion control** (Axis ganging can be done via software - 18 digital outputs, can be repurposed)
+2. **Wide input voltage** range (9-36V)
+3. **Wifi or bluetooth** support for remote control and job loading
+4. **SD card**
+5. **10 isolated inputs** (supporting NPN inductive switches and Standard NC/NO switches)
+6. **3 isolated Relay** outputs for switching high voltage outputs, say a compressor
+7. **3 isolated MOSFET**, perfect for driving solenoids for coolant or mist
+8. Dedicated **Laser output port**. 
+9. **Isolated USB**
+10. **Isolated RS485** (Modbus serial port)
 
 ## Demo Video
 > Click Image to load youtube video
@@ -42,5 +38,34 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 
 [![Demo Video](http://img.youtube.com/vi/vrsv_Eusyqc/0.jpg)](http://www.youtube.com/watch?v=vrsv_Eusyqc "Video Title")
+## Purchase
+The Root Controller ISO can be purchased on the Root CNC store
+[GOTO SHOP](https://rootcnc.com/product-category/electronics/)
+## Electrical Specification 
+Details can be found [**here**](https://github.com/RootCNC/Root-Controller-ISO/blob/master/docs/ElectricalSpec.md). If you require additional information I have missed, please contact me and I'll get it added.
+## Wiring information
+For more information on how to wire and connect the Root Controller to external drives, sensors and other peripherals. please see the Wiki site. [Link to the WIKI](https://wiki.rootcnc.com/)
+## Software pinouts
+To control the hardware the pinout of peripherals needs to be known, the link **[here](https://github.com/RootCNC/Root-Controller-ISO/blob/master/docs/Pinout.md)** is a convenient way to map Input and Output to the software.
+## Software Configurations
+For basic configurations for your machine, please see the sub folder names "Configurations"
+## Mechanical dimensions
+![Root Controller Rev 2.0 dimensions](https://github.com/RootCNC/Root-Controller-ISO/blob/master/Media/Dimensions_Rev2.1.PNG)
+## PCB layout
+![Root Controller Rev 2.0 PCB Layout](https://github.com/RootCNC/Root-Controller-ISO/blob/master/Media/IO_Layout.svg)
 
+## What is Root CNC
+For Root CNC project information 
+visit [the website](https://rootcnc.com)
+## Social links
 
+ 1. [Facebook Group](https://www.facebook.com/groups/rootcnc/) 
+ 2. [Discourse](https://rootcnc.discourse.group/) 
+ 3. [Discord](https://discord.gg/93Ue5SwthW) Great for quick answer to questions and firmware support
+ 4. [Thingiverse](https://www.thingiverse.com/sailorpete/designs) 
+ 5. [Youtube](https://www.youtube.com/c/sailorpete12/)
+
+## License
+
+This project is licensed under the Creative Commons 4.0 license with 
+Attribution-NonCommerial-ShareAlike see `LICENSE.txt` for details
