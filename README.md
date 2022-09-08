@@ -25,9 +25,11 @@ The Root Controller ISO can be purchased on the Root CNC store
 ## Electrical Specification 
 Details can be found [**here**](https://github.com/RootCNC/Root-Controller-ISO/blob/master/docs/ElectricalSpec.md). If you require additional information I have missed, please contact me and I'll get it added.
 ## Wiring information
-For more information on how to wire and connect the Root Controller to external drives or sensors. please see the Wiki site. [Link to the WIKI](https://wiki.rootcnc.com/)
+For more information on how to wire and connect the Root Controller to external drives, sensors and other peripherals. please see the Wiki site. [Link to the WIKI](https://wiki.rootcnc.com/)
 ## Software pinouts
 To control the hardware the pinout of peripherals needs to be known, the link **[here](https://github.com/RootCNC/Root-Controller-ISO/blob/master/docs/Pinout.md)** is a convenient way to map Input and Output to the software.
+## Software Configurations
+For basic configurations for your machine, please see the sub folder names "Configurations"
 ## Mechanical dimensions
 ![Root Controller Rev 2.0 dimensions](https://github.com/RootCNC/Root-Controller-ISO/blob/master/Media/Dimensions_Rev2.1.PNG)
 ## PCB layout
