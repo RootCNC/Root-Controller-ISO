@@ -166,7 +166,7 @@ Below is a list of known external motor driver to work in the common cathode arr
 * DM542
 * DM556
 * DM860
-#### Fuildnc motor configuration
+#### Fuildnc motor configuration (Common Cathode)
 # Tabs {.tabset}
 ## X Motor
 Motor definition for the X motor port
@@ -198,6 +198,7 @@ Motor definition for the X motor port
             direction_pin: I2SO.5:low 
             disable_pin: I2SO.3:high
 ```
+
 ## Y Motor
 Motor definition for the Y motor port
 ```
@@ -351,7 +352,93 @@ Motor definition for the Y motor port
         direction_pin: I2SO.17:low 
         disable_pin: I2SO.15:high
 ```
+## X Dual Motors
+Ganging two motors together can be implemented with the following motor definition:
 
+> (In this example I use the X Motor and A motor port){.is-info}
+```
+  x:
+    steps_per_mm: 160.000
+    max_rate_mm_per_min: 4500.000
+    acceleration_mm_per_sec2: 500.000
+    max_travel_mm: 100
+    soft_limits: true
+    homing:
+      cycle: 1
+      positive_direction: true
+      mpos_mm: 100
+      feed_mm_per_min: 100.000
+      seek_mm_per_min: 800.000
+      settle_ms: 500
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+
+    motor0:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: true
+      pulloff_mm:1.000
+      standard_stepper:
+        step_pin: I2SO.7:low 
+        direction_pin: I2SO.5:low 
+        disable_pin: I2SO.3:high
+    motor1:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: true
+      pulloff_mm:1.000
+      standard_stepper:
+        step_pin: I2SO.6:low 
+        direction_pin: I2SO.4:low 
+        disable_pin: I2SO.2:high
+```
+> Any axis can have ganged motors! upto a total of 6 motors per controller. This is an example axis configuration.{.is-info}
+
+## Y Dual Motors
+
+Ganging two motors together can be implemented with the following motor definition. This configuration is used on the Root CNC series.
+> (In this example I use the Y Motor and B motor port){.is-info}
+```
+  y:
+    steps_per_mm: 160.000
+    max_rate_mm_per_min: 4500.000
+    acceleration_mm_per_sec2: 500.000
+    max_travel_mm: 100.000
+    soft_limits: true
+    homing:
+      cycle: 1
+      positive_direction: true
+      mpos_mm: 100
+      feed_mm_per_min: 100.000
+      seek_mm_per_min: 800.000
+      settle_ms: 500
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+
+    motor0:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: true
+      pulloff_mm:1.000
+      standard_stepper:
+        step_pin: I2SO.12:low 
+        direction_pin: I2SO.10:low 
+        disable_pin: I2SO.8:high
+    motor1:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: true
+      pulloff_mm:1.000
+      standard_stepper:
+        step_pin: I2SO.13:low 
+        direction_pin: I2SO.11:low 
+        disable_pin: I2SO.9:high
+```
+> Any axis can have ganged motors! upto a total of 6 motors per controller. This is an example axis configuration.{.is-info}
 
 # Inputs
 The Root controller ISO has isolated inputs which are referenced to the Vin section of the card. Please take note of the isolation boundaries when connecting up the inputs.
