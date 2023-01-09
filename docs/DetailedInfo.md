@@ -166,6 +166,191 @@ Below is a list of known external motor driver to work in the common cathode arr
 * DM542
 * DM556
 * DM860
+#### Fuildnc motor configuration
+# Tabs {.tabset}
+## X Motor
+Motor definition for the X motor port
+```
+      x:
+        steps_per_mm: 160.000
+        max_rate_mm_per_min: 4500.000
+        acceleration_mm_per_sec2: 500.000
+        max_travel_mm: 100
+        soft_limits: true
+        homing:
+          cycle: 1
+          positive_direction: true
+          mpos_mm: 100
+          feed_mm_per_min: 100.000
+          seek_mm_per_min: 800.000
+          settle_ms: 500
+          seek_scaler: 1.100
+          feed_scaler: 1.100
+    
+        motor0:
+          limit_neg_pin: NO_PIN
+          limit_pos_pin: NO_PIN
+          limit_all_pin: NO_PIN
+          hard_limits: true
+          pulloff_mm:1.000
+          standard_stepper:
+            step_pin: I2SO.7:low 
+            direction_pin: I2SO.5:low 
+            disable_pin: I2SO.3:high
+```
+## Y Motor
+Motor definition for the Y motor port
+```
+  y:
+    steps_per_mm: 160.000
+    max_rate_mm_per_min: 4500.000
+    acceleration_mm_per_sec2: 500.000
+    max_travel_mm: 100.000
+    soft_limits: true
+    homing:
+      cycle: 1
+      positive_direction: true
+      mpos_mm: 100
+      feed_mm_per_min: 100.000
+      seek_mm_per_min: 800.000
+      settle_ms: 500
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+
+    motor0:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: true
+      pulloff_mm:1.000
+      standard_stepper:
+        step_pin: I2SO.12:low 
+        direction_pin: I2SO.10:low 
+        disable_pin: I2SO.8:high
+```
+## Z Motor
+Motor definition for the Z motor port
+```
+  z:
+    steps_per_mm: 160.000
+    max_rate_mm_per_min: 4500.000
+    acceleration_mm_per_sec2: 500.000
+    max_travel_mm: 100.000
+    soft_limits: true
+    homing:
+      cycle: 1
+      positive_direction: true
+      mpos_mm: 100
+      feed_mm_per_min: 100.000
+      seek_mm_per_min: 800.000
+      settle_ms: 500
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+
+    motor0:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: true
+      pulloff_mm:1.000
+      standard_stepper:
+        step_pin: I2SO.18:low 
+        direction_pin: I2SO.16:low 
+        disable_pin: I2SO.14:high
+```
+
+## A Motor
+Motor definition for the A motor port
+```
+  a:
+    steps_per_mm: 160.000
+    max_rate_mm_per_min: 4500.000
+    acceleration_mm_per_sec2: 500.000
+    max_travel_mm: 100.000
+    soft_limits: true
+    homing:
+      cycle: 1
+      positive_direction: true
+      mpos_mm: 100
+      feed_mm_per_min: 100.000
+      seek_mm_per_min: 800.000
+      settle_ms: 500
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+
+    motor0:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: true
+      pulloff_mm:1.000
+      standard_stepper:
+        step_pin: I2SO.6:low 
+        direction_pin: I2SO.4:low 
+        disable_pin: I2SO.2:high
+```
+
+## B Motor
+Motor definition for the B motor port
+```
+  b:
+    steps_per_mm: 160.000
+    max_rate_mm_per_min: 4500.000
+    acceleration_mm_per_sec2: 500.000
+    max_travel_mm: 100.000
+    soft_limits: true
+    homing:
+      cycle: 1
+      positive_direction: true
+      mpos_mm: 100
+      feed_mm_per_min: 100.000
+      seek_mm_per_min: 800.000
+      settle_ms: 500
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+
+    motor0:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: true
+      pulloff_mm:1.000
+      standard_stepper:
+        step_pin: I2SO.13:low 
+        direction_pin: I2SO.11:low 
+        disable_pin: I2SO.9:high
+```
+
+## C Motor
+Motor definition for the Y motor port
+```
+  c:
+    steps_per_mm: 160.000
+    max_rate_mm_per_min: 4500.000
+    acceleration_mm_per_sec2: 500.000
+    max_travel_mm: 100.000
+    soft_limits: true
+    homing:
+      cycle: 1
+      positive_direction: true
+      mpos_mm: 100
+      feed_mm_per_min: 100.000
+      seek_mm_per_min: 800.000
+      settle_ms: 500
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+
+    motor0:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: true
+      pulloff_mm:1.000
+      standard_stepper:
+        step_pin: I2SO.19:low 
+        direction_pin: I2SO.17:low 
+        disable_pin: I2SO.15:high
+```
 
 
 # Inputs
@@ -299,13 +484,13 @@ I2S Bus is purely outputs ONLY.
 | **Port**  |  **Description** |  **Port**  |  **Description** |  **Port**  |  **Description** |
 |-----------|------------------|------------|------------------|------------|------------------|
 | **I2S_0** | LASER_DIR        | **I2S_8**  | Y_EN             | **I2S_16** | Z_DIR            |
-| **I2S_1** | LASER_EN         | **I2S_9**  | B_EN_PIN         | **I2S_17** | C_DIRECTION_PIN  |
+| **I2S_1** | LASER_EN         | **I2S_9**  | B_EN             | **I2S_17** | C_DIR            |
 | **I2S_2** | A_EN             | **I2S_10** | Y_DIR            | **I2S_18** | Z_STEP           |
-| **I2S_3** | X_EN             | **I2S_11** | B_DIRECTION_PIN  | **I2S_19** | C_STEP_PIN       |
-| **I2S_4** | A_DIRECTION_PIN  | **I2S_12** | Y_STEP           | **I2S_20** | RELAY_2          |
-| **I2S_5** | X_DIR            | **I2S_13** | B_STEP_PIN       | **I2S_21** | RELAY_1          |
-| **I2S_6** | A_STEP_PIN       | **I2S_14** | Z_EN             | **I2S_22** | FET_2            |
-| **I2S_7** | X_STEP           | **I2S_15** | C_EN_PIN         | **I2S_23** | NOT USED         |
+| **I2S_3** | X_EN             | **I2S_11** | B_DIR  		   | **I2S_19** | C_STEP           |
+| **I2S_4** | A_DIR			   | **I2S_12** | Y_STEP           | **I2S_20** | RELAY_2          |
+| **I2S_5** | X_DIR            | **I2S_13** | B_STEP           | **I2S_21** | RELAY_1          |
+| **I2S_6** | A_STEP           | **I2S_14** | Z_EN             | **I2S_22** | FET_2            |
+| **I2S_7** | X_STEP           | **I2S_15** | C_EN             | **I2S_23** | NOT USED         |
 {.dense}
 
 ### ESP32 Mapping
