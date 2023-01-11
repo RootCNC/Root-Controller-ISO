@@ -173,7 +173,7 @@ Below is a list of known external motor driver to work in the common cathode arr
 #### Fuildnc motor configuration (Common Cathode)
 # Tabs {.tabset}
 ## X Motor
-<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_1.png" width="400">
+<img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_1.png" width="400">
 
 Motor definition for the X motor port
 ```
@@ -207,7 +207,7 @@ Motor definition for the X motor port
 
 ## Y Motor
 
-<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_2.png" width="400">
+<img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_2.png" width="400">
 
 Motor definition for the Y motor port
 ```
@@ -240,7 +240,7 @@ Motor definition for the Y motor port
 ```
 ## Z Motor
 
-<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_.png" width="400">
+<img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_.png" width="400">
 
 Motor definition for the Z motor port
 ```
@@ -274,7 +274,7 @@ Motor definition for the Z motor port
 
 ## A Motor
 
-<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_4.png" width="400">
+<img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_4.png" width="400">
 
 Motor definition for the A motor port
 ```
@@ -308,7 +308,7 @@ Motor definition for the A motor port
 
 ## B Motor
 
-<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_5.png" width="400">
+<img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_5.png" width="400">
 
 Motor definition for the B motor port
 ```
@@ -342,7 +342,7 @@ Motor definition for the B motor port
 
 ## C Motor
 
-<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_6.png" width="400">
+<img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_6.png" width="400">
 
 Motor definition for the Y motor port
 ```
