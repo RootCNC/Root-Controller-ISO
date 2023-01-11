@@ -175,7 +175,6 @@ Below is a list of known external motor driver to work in the common cathode arr
 ## X Motor
 <img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_1.png" width="400">
 
-Motor definition for the X motor port
 ```
       x:
         steps_per_mm: 160.000
