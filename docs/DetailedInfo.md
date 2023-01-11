@@ -9,12 +9,16 @@ dateCreated: 2022-02-25T22:12:57.077Z
 ---
 
 # Introduction
-<img align="right" width=100 src="https://github.com/RootCNC/Root-Controller-ISO/blob/master/Media/R_Logo.png" />
-At its core the Root controller is a ESP32 GRBL isolated motion controller (FluidNC/ grblHAL). What makes this controller different is the focus of providing **isolated IO** to the **CNC controller**. The controller is designed to accommodate a wide range of operating conditions and machines, to provide ultimate flexibility (its not just a Root CNC Controller).
+<img align="right" width=100 src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/R_Logo.png" />
+
+At its core the Root controller is a ESP32 GRBL isolated motion controller (FluidNC/ grblHAL). What makes this controller different is the focus of providing  **isolated IO** to the **CNC controller**. The controller is designed to accommodate a wide range of operating conditions and machines, to provide ultimate flexibility (its not just a Root CNC Controller).
 
 The controller is designed to isolate the key area of the design to mitigate any nuisance issues when operating in an electrically noisy environment. The design isolates the following areas from one another: Steppers driver outputs (achieved by using externally OPTO isolated drivers), USB, Relays, MOSFETs and RS485. Perfectly suited for the larger CNC machines. 
 
 ## Key features 
+
+<img align="right" width=100 src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/R_Logo.png" />
+
 1. **6 axis motion control** (Axis ganging can be done via software - 18 digital outputs, can be repurposed)
 2. **Wide input voltage** range (9-36V)
 3. **WiFi or bluetooth** support for remote control and job loading
@@ -169,6 +173,8 @@ Below is a list of known external motor driver to work in the common cathode arr
 #### Fuildnc motor configuration (Common Cathode)
 # Tabs {.tabset}
 ## X Motor
+<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_1.png" width="400">
+
 Motor definition for the X motor port
 ```
       x:
@@ -200,6 +206,9 @@ Motor definition for the X motor port
 ```
 
 ## Y Motor
+
+<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_2.png" width="400">
+
 Motor definition for the Y motor port
 ```
   y:
@@ -230,6 +239,9 @@ Motor definition for the Y motor port
         disable_pin: I2SO.8:high
 ```
 ## Z Motor
+
+<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_.png" width="400">
+
 Motor definition for the Z motor port
 ```
   z:
@@ -261,6 +273,9 @@ Motor definition for the Z motor port
 ```
 
 ## A Motor
+
+<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_4.png" width="400">
+
 Motor definition for the A motor port
 ```
   a:
@@ -292,6 +307,9 @@ Motor definition for the A motor port
 ```
 
 ## B Motor
+
+<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_5.png" width="400">
+
 Motor definition for the B motor port
 ```
   b:
@@ -323,6 +341,9 @@ Motor definition for the B motor port
 ```
 
 ## C Motor
+
+<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_6.png" width="400">
+
 Motor definition for the Y motor port
 ```
   c:
@@ -745,9 +766,9 @@ The USB port on the Root controller is a Type-C 2.0 UFP.
 For basic configurations for your machine, please see the sub folder names "Configurations"
 
 # Mechanical dimensions
-![Root Controller Rev 2.0 dimensions](https://github.com/RootCNC/Root-Controller-ISO/blob/master/Media/Dimensions_Rev2.1.PNG)
+![Root Controller Rev 2.0 dimensions](https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/Dimensions_Rev2.1.PNG)
 # PCB layout
-![Root Controller Rev 2.0 PCB Layout](https://github.com/RootCNC/Root-Controller-ISO/blob/master/Media/IO_Layout.svg)
+![Root Controller Rev 2.0 PCB Layout](https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/IO_Layout.svg)
 
 # Social links
 
