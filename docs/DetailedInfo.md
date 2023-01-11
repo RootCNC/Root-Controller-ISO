@@ -205,11 +205,12 @@ Motor definition for the X motor port
             disable_pin: I2SO.3:high
 ```
 
+Motor definition for the X motor port
+
 ## Y Motor
 
 <img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_2.png" width="400">
 
-Motor definition for the Y motor port
 ```
   y:
     steps_per_mm: 160.000
@@ -238,11 +239,13 @@ Motor definition for the Y motor port
         direction_pin: I2SO.10:low 
         disable_pin: I2SO.8:high
 ```
+
+Motor definition for the Y motor port
+
 ## Z Motor
 
-<img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_.png" width="400">
+<img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_3.png" width="400">
 
-Motor definition for the Z motor port
 ```
   z:
     steps_per_mm: 160.000
@@ -272,11 +275,12 @@ Motor definition for the Z motor port
         disable_pin: I2SO.14:high
 ```
 
+Motor definition for the Z motor port
+
 ## A Motor
 
 <img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_4.png" width="400">
 
-Motor definition for the A motor port
 ```
   a:
     steps_per_mm: 160.000
@@ -306,11 +310,12 @@ Motor definition for the A motor port
         disable_pin: I2SO.2:high
 ```
 
+Motor definition for the A motor port
+
 ## B Motor
 
 <img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_5.png" width="400">
 
-Motor definition for the B motor port
 ```
   b:
     steps_per_mm: 160.000
@@ -340,11 +345,12 @@ Motor definition for the B motor port
         disable_pin: I2SO.9:high
 ```
 
+Motor definition for the B motor port
+
 ## C Motor
 
 <img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_6.png" width="400">
 
-Motor definition for the Y motor port
 ```
   c:
     steps_per_mm: 160.000
@@ -373,6 +379,9 @@ Motor definition for the Y motor port
         direction_pin: I2SO.17:low 
         disable_pin: I2SO.15:high
 ```
+
+Motor definition for the Y motor port
+
 ## X Dual Motors
 Ganging two motors together can be implemented with the following motor definition:
 
