@@ -52,9 +52,6 @@ allowfullscreen></iframe>
 
 [![Demo Video](http://img.youtube.com/vi/vrsv_Eusyqc/0.jpg)](http://www.youtube.com/watch?v=vrsv_Eusyqc "Video Title")
 
-## Board Outline
-> Rev 3 Warning #2
-{.is-warning}
 
 # Power
 The Root controller is segregation into multiple isolation zones to suit the individual needs of the CNC builder. The purpose of these zones is to help isolated areas from interfering with one another. For example the spindle control vs the low noise CNC controller zones. The Root controller is well suited for large CNC machines and plasma cutters.
@@ -88,6 +85,7 @@ This power supply is internally fused for added protection.
 The minimum PSU capacity should greater then `8 watts` to power the controller.
 
 The voltage applied to the controller through this connector is also applied to the controllers inputs power pins. This is useful when powering external sensors, such as inductive probes. The inputs power pins are fused with the same fuse as the main input power connector. 
+
 # Tabs {.tabset}
 ## Rev 3
 
@@ -125,7 +123,7 @@ Comming Soon
 When not using these ports for the stepper motor controller, then the remaining ports can be reconfigured in software to support discrete outputs.
 
 ## Ref Set 
-> The Root Controller has two configurable jumpers to set its reference point for either common anode or cathode, please ensure these are correctly configured. More information below.  {.is-info} 
+> The Root Controller has two configurable references, either 0V or 5V to set the refernece point for either common anode or cathode stepper motor wiring. please ensure these are correctly configured. More information below. (Rev 2.1 and onwards) {.is-info} 
 
 ## Tabs {.tabset}
 ### Rev 3
@@ -143,7 +141,7 @@ Both headers on the Root Controller need to be set correctly in order for correc
 > Please note these outputs are software configurable. The Root 3 onwards will use either axis outputs of A, B, C to be the second Y (YII) axis. If you are planning on using the root controller for other style of machines; the software supports up to two outputs per axis. For example the MPCNC Which has XII and YII which will use ports A,B.{.is-info} 
 
 ### Rev 2.0
->` Rev 2.0` only supports a common cathode (0V reference)  {.is-info} 
+>` Rev 2.0` only supports a common cathode (0V reference) {.is-warning}
 
 ### Beta Card
 
@@ -170,10 +168,15 @@ Below is a list of known external motor driver to work in the common cathode arr
 * DM542
 * DM556
 * DM860
+
 #### Fuildnc motor configuration (Common Cathode)
 # Tabs {.tabset}
-## X Motor
-<img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_1.png" width="400">
+## Fluidnc
+
+## Tabs {.tabset}
+
+### X Motor
+<img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_1.png" width="600">
 
 ```
       x:
@@ -206,9 +209,9 @@ Below is a list of known external motor driver to work in the common cathode arr
 
 Motor definition for the X motor port
 
-## Y Motor
+### Y Motor
 
-<img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_2.png" width="400">
+<img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_2.png" width="600">
 
 ```
   y:
@@ -241,9 +244,9 @@ Motor definition for the X motor port
 
 Motor definition for the Y motor port
 
-## Z Motor
+### Z Motor
 
-<img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_3.png" width="400">
+<img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_3.png" width="600">
 
 ```
   z:
@@ -276,9 +279,9 @@ Motor definition for the Y motor port
 
 Motor definition for the Z motor port
 
-## A Motor
+### A Motor
 
-<img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_4.png" width="400">
+<img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_4.png" width="600">
 
 ```
   a:
@@ -311,9 +314,9 @@ Motor definition for the Z motor port
 
 Motor definition for the A motor port
 
-## B Motor
+### B Motor
 
-<img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_5.png" width="400">
+<img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_5.png" width="600">
 
 ```
   b:
@@ -346,9 +349,9 @@ Motor definition for the A motor port
 
 Motor definition for the B motor port
 
-## C Motor
+### C Motor
 
-<img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_6.png" width="400">
+<img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_6.png" width="600">
 
 ```
   c:
@@ -381,7 +384,7 @@ Motor definition for the B motor port
 
 Motor definition for the Y motor port
 
-## X Dual Motors
+### X Dual Motors
 Ganging two motors together can be implemented with the following motor definition:
 
 > (In this example I use the X Motor and A motor port){.is-info}
@@ -425,7 +428,7 @@ Ganging two motors together can be implemented with the following motor definiti
 ```
 > Any axis can have ganged motors! upto a total of 6 motors per controller. This is an example axis configuration.{.is-info}
 
-## Y Dual Motors
+### Y Dual Motors
 
 Ganging two motors together can be implemented with the following motor definition. This configuration is used on the Root CNC series.
 > (In this example I use the Y Motor and B motor port){.is-info}
@@ -468,6 +471,24 @@ Ganging two motors together can be implemented with the following motor definiti
         disable_pin: I2SO.9:high
 ```
 > Any axis can have ganged motors! upto a total of 6 motors per controller. This is an example axis configuration.{.is-info}
+
+## grblHAL
+
+
+## Tabs {.tabset}
+
+### X Motor
+
+### Y Motor
+
+### Z Motor
+
+### A Motor
+
+### B Motor
+
+### C Motor
+
 
 # Inputs
 The Root controller ISO has isolated inputs which are referenced to the Vin section of the card. Please take note of the isolation boundaries when connecting up the inputs.
