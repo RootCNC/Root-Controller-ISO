@@ -17,7 +17,7 @@ The controller is designed to isolate the key area of the design to mitigate any
 
 ## Key features 
 
-<img align="right" width=100 src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/R_Logo.png" />
+<img align="right" width=350 src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/ControllerR3_1.jpg" />
 
 1. **6 axis motion control** (Axis ganging can be done via software - 18 digital outputs, can be repurposed)
 2. **Wide input voltage** range (9-36V)
@@ -43,6 +43,7 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 
 [![Demo Video](http://img.youtube.com/vi/vrsv_Eusyqc/0.jpg)](http://www.youtube.com/watch?v=vrsv_Eusyqc "Video Title")
+
 ## Rev 2.1/2.0
  <iframe width="560" height="315"
 src="http://www.youtube.com/watch?v=vrsv_Eusyqc" 
@@ -68,7 +69,7 @@ The controller has the following major areas of isolation:
 # Tabs {.tabset}
 ## Rev 3
 
-Comming Soon
+<img width=600 src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/ControllerR3_3Power.png" />
 
 ## Rev 2.1/2.0
 <img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/powerscheme.png" width="600">
@@ -89,7 +90,7 @@ The voltage applied to the controller through this connector is also applied to 
 # Tabs {.tabset}
 ## Rev 3
 
-Comming Soon
+<img width=600 src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/ControllerR3_3Power.png" />
 
 ## Rev 2.1/2.0
 <img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/powerinput.png" width="600">
@@ -114,7 +115,7 @@ The Root controller support six software configurable stepper motor outputs. The
 ## Tabs {.tabset}
 ### Rev 3
 
-Comming Soon
+<img width=600 src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/ControllerR3_StepperOutput.png" />
 
 ### Rev 2.1/2.0
 <img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/sleeper_output_ports.png" width="600">
@@ -128,7 +129,7 @@ When not using these ports for the stepper motor controller, then the remaining 
 ## Tabs {.tabset}
 ### Rev 3
 
-Comming Soon
+<img width=600 src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/ControllerR3_RefSet.png" />
 
 ### Rev 2.1
 <img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/refset_port.png" width="600">
@@ -170,12 +171,11 @@ Below is a list of known external motor driver to work in the common cathode arr
 * DM860
 
 #### Fuildnc motor configuration (Common Cathode)
-# Tabs {.tabset}
-## Fluidnc
 
-## Tabs {.tabset}
 
-### X Motor
+#### Tabs {.tabset}
+
+##### X Motor
 <img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_1.png" width="600">
 
 ```
@@ -209,7 +209,7 @@ Below is a list of known external motor driver to work in the common cathode arr
 
 Motor definition for the X motor port
 
-### Y Motor
+##### Y Motor
 
 <img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_2.png" width="600">
 
@@ -244,7 +244,7 @@ Motor definition for the X motor port
 
 Motor definition for the Y motor port
 
-### Z Motor
+##### Z Motor
 
 <img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_3.png" width="600">
 
@@ -279,7 +279,7 @@ Motor definition for the Y motor port
 
 Motor definition for the Z motor port
 
-### A Motor
+##### A Motor
 
 <img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_4.png" width="600">
 
@@ -314,7 +314,7 @@ Motor definition for the Z motor port
 
 Motor definition for the A motor port
 
-### B Motor
+##### B Motor
 
 <img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_5.png" width="600">
 
@@ -349,7 +349,7 @@ Motor definition for the A motor port
 
 Motor definition for the B motor port
 
-### C Motor
+##### C Motor
 
 <img align="right" src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/RootControllerISO_Wiring_6.png" width="600">
 
@@ -384,7 +384,7 @@ Motor definition for the B motor port
 
 Motor definition for the Y motor port
 
-### X Dual Motors
+##### X Dual Motors
 Ganging two motors together can be implemented with the following motor definition:
 
 > (In this example I use the X Motor and A motor port){.is-info}
@@ -428,7 +428,7 @@ Ganging two motors together can be implemented with the following motor definiti
 ```
 > Any axis can have ganged motors! upto a total of 6 motors per controller. This is an example axis configuration.{.is-info}
 
-### Y Dual Motors
+##### Y Dual Motors
 
 Ganging two motors together can be implemented with the following motor definition. This configuration is used on the Root CNC series.
 > (In this example I use the Y Motor and B motor port){.is-info}
@@ -472,22 +472,28 @@ Ganging two motors together can be implemented with the following motor definiti
 ```
 > Any axis can have ganged motors! upto a total of 6 motors per controller. This is an example axis configuration.{.is-info}
 
-## grblHAL
 
+#### grblHAL motor configuration (Common Cathode)
 
-## Tabs {.tabset}
+#### Tabs {.tabset}
 
-### X Motor
+##### X Motor
+Comming soon
 
-### Y Motor
+##### Y Motor
+Comming soon
 
-### Z Motor
+##### Z Motor
+Comming soon
 
-### A Motor
+##### A Motor
+Comming soon
 
-### B Motor
+##### B Motor
+Comming soon
 
-### C Motor
+##### C Motor
+Comming soon
 
 
 # Inputs
@@ -506,6 +512,9 @@ All inputs are software configured and can be repurposed.
 | User Configurable  | 1     | 3       | 3        |
 
 > Please note all input listed in the table are software configurable inputs which can be used for any function.
+
+
+<img width=600 src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/ControllerR3_Inputs.png" />
 
 - axis inputs (one per axis, min and max can be combined onto on input. Please see the end stop section for more information)
 - x1 probe point (used to auto tool height correction of edge finding)
@@ -534,7 +543,9 @@ In this basic configuration, either NO (Normally Open) Or NC (Normally Closed) s
 
 ### Endstop wiring Min & Max (NC)
 <img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/micro-switch-nc.png" width="600">
-> Please note - NC switches are not recommend on `Y_lim`. IF YOU INTEND TO FLASH THE ROOT CONTROLLER WHILST BEING INSTALLED IN A SYSTEMS. pulling these pins LOW stops the programming routing. If you do use NC switched: then, please ensure these are disconnected piror to programming. {.is-warning}
+
+> Please note REV 2.1/REV 2.0 - NC switches are not recommend on `Y_lim`. IF YOU INTEND TO FLASH THE ROOT CONTROLLER WHILST BEING INSTALLED IN A SYSTEMS. pulling these pins LOW stops the programming routing. If you do use NC switched: then, please ensure these are disconnected piror to programming. 
+{.is-warning}
 
 # Outputs
 Aside from the digital outputs of the stepper driver port (Please see # Stepper control for more information). The Root Controller has the additional outputs:
@@ -550,16 +561,27 @@ Aside from the digital outputs of the stepper driver port (Please see # Stepper 
 - Laser/ spindle port, perfect for controlling a PWM device
 
 ## MOSFETS
-The Root controller has three high power MOSFETs which can be used to switch the power to a number of device, such as solenoids, lights and DC motors. 
+The Root controller has a number of high power MOSFETs which can be used to switch the power to a number of device, such as solenoids, lights and DC motors. 
 
 The power supply is fed by its dedicated power connector. The input power is internally fused for added protection. The supply can be separate or tied to other supplies depending on your configuration.
 
 The MOSFET area is perfectly suited for switching inductive loads such a solenoids or relays. 
 
-MOSFET control = on/off control and PWM control (Hardware dependant 
+|                                     | Rev 3        | Rev 2.1      | Rev 2.0       |
+|-------------------------------------|--------------|--------------|---------------|
+|  PWM 															  | 1 (FET_1)    | 2 (FET_1/2)  | 2 (FET_1/2)   |
+|  ON/ OFF controller								  | 1            | 1            | 1             |
+|  **Total** 														  | **2**    | **3**        | **3**         |
+
+
+MOSFET control = on/off control and PWM control (Hardware dependant)
+
 
 ## Tabs {.tabset}
 ### Rev 3
+
+<img width=600 src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/ControllerR3_MOSFETi.png" />
+
 > Please note depending on the software configuration, not all MOSFET or RELAY output can be used at the same time.
 {.is-info}
 ### Rev 2.1/2.0
@@ -578,10 +600,15 @@ The Root controller has a number relays outputs which can be used to switch high
 
 These relays are capable of switching mains power with a current of 13A.
 
-Relay control = on/off control
+|                                     | Rev 3        | Rev 2.1      | Rev 2.0       |
+|-------------------------------------|--------------|--------------|---------------|
+| On/ Off control Relau                  | 2            | 3            | 3             |
 
 ## Tabs {.tabset}
 ### Rev 3
+
+<img width=600 src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/ControllerR3_Relayi.png" />
+
 > Please note depending on the software configuration, not all MOSFET or RELAY output can be used at the same time.
 {.is-info}
 ### Rev 2.1/2.0
@@ -602,6 +629,9 @@ Laser/ Spindle control
 ## Tabs {.tabset}
 ### Rev 3
 
+
+<img width=600 src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/ControllerR3_Laser.png" />
+
 ### Rev 2.1/2.0
 <img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/laserport.png" width="600">
 
@@ -611,10 +641,64 @@ Laser/ Spindle control
 > This port is NOT isolated so careful consideration is needed when connecting external devices to ensure the isolation zones are not violated
 {.is-warning}
 
+# Isolated RS485
+The Root controller offers a fully isolated RS485/ MODBUS interface. This interface allows communication between the controller and a VFD spindle motor (OR other device - Software dependant).
+
+This interface is intended to be to a small isolated area which is powered form the VFD or downstream connected device. for full operating range, please see the electrical specification below.
+
+All versions of the Root Controller ISO offer the isolated RS485 interface
+
+<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/ControllerR3_IsolatedRS485.png" width="600">
+
+> Please note this interface will not work unless externally powered {.warning}
+
+
+# SD CARD
+
+The Root controller has expandable storage option in the form of an SD card. files can be sent over WIFI and stored on the SD for later use. this is particularly handy when running repetitive jobs. files can be accessed from a web browser over your local network.
+
+For better compatibility, please use the older SD card rather than the newer ones.
+
+<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/ControllerR3_SD.png" width="600">
+
+All versions of the Root Controller ISO offer a SD card interface
+
+To enable the code please use the following in the configuration
+
+# Tabs {.tabset}
+## Fluidnc
+
+```
+spi:
+  miso_pin: gpio.19
+  mosi_pin: gpio.23
+  sck_pin: gpio.18
+
+sdcard:
+  card_detect_pin: NO_PIN
+  cs_pin: gpio.5
+```
+## grblHAL
+
+# WIFI / Blutooth
+
+The Root controller offers wireless capability. this allows controller of the machine through your local network or via a mobile phone and blutooth. 
+
+As EMC and isolation is a concern; careful positioning and placement of the antenna is critical for optimum performance. The Root Controller had implemented an internal antenna with the goal to reduce the cost of the controller. but this led to poor WIFI coverage; for this reason, the new versions of the Root controller offer an external antenna with can be extended using a standard SMA extension lead.
+
+<img src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/ControllerR3_Wifi.png" width="600">
+
+> Please note: the outer shield of the Antenna is connected to an internal reference plane. you **MUST NOT** connect this to Chassis or any other return planes as this will ruin your isolated setup. you will note the antenna port on the newer Rev 3 and onwards controllers has isolation washer between the case and the connector. This is to stop this connection from happening. If you intend to extend this internal for better antenna performance, or outside and electrical cabinet  - please ensure the isolation boundaries of isolation are kept. {.warning}
+
+|               | Rev 3     | Rev 2.1   | Rev 2.0   | Beta Card |
+|---------------|-----------|-----------|-----------|-----------|
+| WIFI Antenna  | External  | External  | Internal  | Internal  |
+
 # Pin mapping
 The Root controller comes in different forms, please select the tab that matches your hardware revision 
 # Tabs {.tabset}
 ## ISO Rev 3
+
 
 ### I2S Output Port Mapping
 I2S Bus is purely outputs ONLY.
@@ -795,10 +879,26 @@ The USB port on the Root controller is a Type-C 2.0 UFP.
 For basic configurations for your machine, please see the sub folder names "Configurations"
 
 # Mechanical dimensions
+
+# Tabs {.tabset}
+## Rev 3
+comming soon
+## Rev 2.1/2.0
 ![Root Controller Rev 2.0 dimensions](https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/Dimensions_Rev2.1.PNG)
 # PCB layout
+# Tabs {.tabset}
+## Rev 3
+![Root Controller Rev 3.0 PCB Layout](https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/PCB_Outline.png)
+## Rev 2.1/2.0
 ![Root Controller Rev 2.0 PCB Layout](https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/IO_Layout.svg)
 
+# 3D CAD Models
+
+# Tabs {.tabset}
+## Rev 3
+Comming soon
+## Rev 2.1/2.0
+Comming soon
 # Social links
 
  1. [Facebook Group](https://www.facebook.com/groups/rootcnc/) 
