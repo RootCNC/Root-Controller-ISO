@@ -882,13 +882,13 @@ For basic configurations for your machine, please see the sub folder names "Conf
 
 # Tabs {.tabset}
 ## Rev 3
-comming soon
+<img width=500 src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/R3Size.png" />
 ## Rev 2.1/2.0
 ![Root Controller Rev 2.0 dimensions](https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/Dimensions_Rev2.1.PNG)
 # PCB layout
 # Tabs {.tabset}
 ## Rev 3
-![Root Controller Rev 3.0 PCB Layout](https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/PCB_Outline.png)
+<img width=500 src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/PCB_Outline.png" />
 ## Rev 2.1/2.0
 ![Root Controller Rev 2.0 PCB Layout](https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/IO_Layout.svg)
 
