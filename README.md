@@ -5,7 +5,7 @@ At its core the Root controller is a ESP32 GRBL isolated motion controller (Flui
 
 The controller is designed to isolate the key area of the design to mitigate any nuisance issues when operating in an electrically noisy environment. The design isolates the following areas from one another: Steppers driver outputs (achieved by using externally OPTO isolated drivers), USB, Relays, MOSFETs and RS485. Perfectly suited for the larger CNC machines. 
 
-![Root Controller Rev 2.1 ](https://github.com/RootCNC/Root-Controller-ISO/blob/master/Media/ControllerR3_1.jpg)
+<img width=500 src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/ControllerR3_1.jpg" />
 
 ## Key features 
 1. **6 axis motion control** (Axis ganging can be done via software - 18 digital outputs, can be repurposed)
