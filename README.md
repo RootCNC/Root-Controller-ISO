@@ -5,7 +5,7 @@ At its core the Root controller is a ESP32 GRBL isolated motion controller (Flui
 
 The controller is designed to isolate the key area of the design to mitigate any nuisance issues when operating in an electrically noisy environment. The design isolates the following areas from one another: Steppers driver outputs (achieved by using externally OPTO isolated drivers), USB, Relays, MOSFETs and RS485. Perfectly suited for the larger CNC machines. 
 
-<img align="center" width=500 src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/ControllerR3_1.jpg" />
+<img width=500 src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/ControllerR3_1.jpg" />
 
 ## Key features 
 1. **6 axis motion control** (Axis ganging can be done via software - 18 digital outputs, can be repurposed)
@@ -28,12 +28,12 @@ The Root Controller ISO can be purchased on the Root CNC store
 {.is-info}
 
  <iframe width="560" height="315"
-src="http://www.youtube.com/watch?v=vrsv_Eusyqc" 
+src="https://youtu.be/JiuDgxlzHaU" 
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 allowfullscreen></iframe>
 
-[![Demo Video](http://img.youtube.com/vi/vrsv_Eusyqc/0.jpg)](http://www.youtube.com/watch?v=vrsv_Eusyqc "Video Title")
+[![Demo Video](https://img.youtube.com/vi/JiuDgxlzHaU/sddefault.jpg)](https://youtu.be/JiuDgxlzHaU "Video Title")
 
 ## Electrical Specification 
 Details can be found [**here**](https://wiki.rootcnc.com/en/Root-Controller-ISO/DetailedInfo). If you require additional information I have missed, please contact me and I'll get it added.
@@ -43,10 +43,15 @@ For more information on how to wire and connect the Root Controller to external 
 To control the hardware the pinout of peripherals needs to be known, the link **[here](https://wiki.rootcnc.com/en/Root-Controller-ISO/DetailedInfo)** is a convenient way to map Input and Output to the software.
 ## Software Configurations
 For basic configurations for your machine, please see the sub folder names "Configurations"
+
 ## Mechanical dimensions
+
 <img width=500 src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/R3Size.png" />
+
 ## PCB layout
+
 <img width=500 src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/PCB_Outline.png" />
+
 
 ## What is Root CNC
 For Root CNC project information 
