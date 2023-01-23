@@ -36,20 +36,10 @@ The controller is designed to isolate the key area of the design to mitigate any
 {.is-info}
 
 ## Rev 3
- <iframe width="560" height="315"
-src="https://youtu.be/JiuDgxlzHaU" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
 
 [![Demo Video](https://img.youtube.com/vi/JiuDgxlzHaU/sddefault.jpg)](https://youtu.be/JiuDgxlzHaU "Root Controller Rev 3")
 
 ## Rev 2.1/2.0
- <iframe width="560" height="315"
-src="http://www.youtube.com/watch?v=vrsv_Eusyqc" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
 
 [![Demo Video](http://img.youtube.com/vi/vrsv_Eusyqc/0.jpg)](http://www.youtube.com/watch?v=vrsv_Eusyqc "Root Controller Rev 2")
 

@@ -27,12 +27,6 @@ The Root Controller ISO can be purchased on the Root CNC store
 > Click Image to load youtube video
 {.is-info}
 
- <iframe width="560" height="315"
-src="https://youtu.be/JiuDgxlzHaU" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
-
 [![Demo Video](https://img.youtube.com/vi/JiuDgxlzHaU/sddefault.jpg)](https://youtu.be/JiuDgxlzHaU "Video Title")
 
 ## Electrical Specification 
