@@ -1,0 +1,187 @@
+board: Root Controller ISO R4 Tangential Cutter Test
+name: Isolated 6 Axis Tangential Cutter Test
+stepping:
+  engine: I2S_STATIC
+  idle_ms: 255
+  pulse_us: 4
+  dir_delay_us: 1
+  disable_delay_us: 3
+
+axes:
+  shared_stepper_disable_pin: NO_PIN
+  x:
+    steps_per_mm: 400.000
+    max_rate_mm_per_min: 3000.000
+    acceleration_mm_per_sec2: 100.000
+    max_travel_mm: 220.000
+    soft_limits: false
+    homing:
+      cycle: 2
+      positive_direction: true
+      mpos_mm: 220.000
+      feed_mm_per_min: 100.000
+      seek_mm_per_min: 800.000
+      settle_ms: 500
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+
+    motor0:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: gpio.26
+      hard_limits: false
+      pulloff_mm:1.000
+      standard_stepper:
+        step_pin: I2SO.2
+        direction_pin: I2SO.1:low 
+        disable_pin: I2SO.0:high
+
+  y:
+    steps_per_mm: 400.000
+    max_rate_mm_per_min: 3000.000
+    acceleration_mm_per_sec2: 100.000
+    max_travel_mm: 278.000
+    soft_limits: false
+    homing:
+      cycle: 3
+      positive_direction: false
+      mpos_mm: 278.000
+      feed_mm_per_min: 100.000
+      seek_mm_per_min: 800.000
+      settle_ms: 500
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+
+    motor0:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: gpio.02
+      limit_all_pin: NO_PIN
+      hard_limits: false
+      pulloff_mm:1.000
+      standard_stepper:
+        step_pin: I2SO.6
+        direction_pin: I2SO.5
+        disable_pin: I2SO.4:high
+
+  z:
+    steps_per_mm: 500.000
+    max_rate_mm_per_min: 3000.000
+    acceleration_mm_per_sec2: 100.000
+    max_travel_mm: 59.000
+    soft_limits: false
+    homing:
+      cycle: 1
+      positive_direction: true
+      mpos_mm: 0.500
+      feed_mm_per_min: 100.000
+      seek_mm_per_min: 800.000
+      settle_ms: 500
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+
+    motor0:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: gpio.15
+      limit_all_pin: NO_PIN
+      hard_limits: false
+      pulloff_mm:1.000
+      standard_stepper:
+        step_pin: I2SO.10
+        direction_pin: I2SO.9:low 
+        disable_pin: I2SO.8:high
+  a:
+    steps_per_mm: 1777.77
+    max_rate_mm_per_min: 1000.000
+    acceleration_mm_per_sec2: 250.000
+    max_travel_mm: 99999.99
+    soft_limits: false
+    homing:
+      cycle: 4
+      positive_direction: true
+      mpos_mm: 0.0
+      feed_mm_per_min: 100.000
+      seek_mm_per_min: 300.000
+      settle_ms: 500
+      seek_scaler: 3.500
+      feed_scaler: 1.500
+
+    motor0:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: gpio.35:low
+      limit_all_pin: NO_PIN
+      hard_limits: false
+      pulloff_mm:0.1
+      standard_stepper:
+        step_pin: I2SO.22:low 
+        direction_pin: I2SO.21:high 
+        disable_pin: I2SO.20:high
+i2so:
+  bck_pin: gpio.22
+  data_pin: gpio.12
+  ws_pin: gpio.21
+
+spi:
+  miso_pin: gpio.19
+  mosi_pin: gpio.23
+  sck_pin: gpio.18
+
+sdcard:
+  card_detect_pin: NO_PIN
+  cs_pin: gpio.5
+
+control:
+  safety_door_pin: NO_PIN
+  reset_pin: NO_PIN
+  feed_hold_pin: gpio.34
+  cycle_start_pin: gpio.36
+  macro0_pin: gpio.39
+  macro1_pin: NO_PIN
+  macro2_pin: NO_PIN
+  macro3_pin: NO_PIN
+
+coolant:
+  flood_pin: gpio.33
+  mist_pin: gpio.13
+  delay_ms: 0
+
+probe:
+  pin: gpio.27
+  check_mode_start: true
+
+macros:
+  startup_line0:
+  startup_line1:
+  macro0: 
+  macro1: 
+  macro2: 
+  macro3:
+  
+user_outputs:
+  analog0_pin: NO_PIN
+  analog1_pin: NO_PIN
+  analog2_pin: NO_PIN
+  analog3_pin: NO_PIN
+  analog0_hz: 5000
+  analog1_hz: 5000
+  analog2_hz: 5000
+  analog3_hz: 5000
+  digital0_pin: i2so.12
+  digital1_pin: i2so.13
+  digital2_pin: i2so.14
+  digital3_pin: i2so.15
+
+
+start:
+  must_home: true
+
+pwm:
+  pwm_hz: 2000
+  direction_pin: I2SO.25
+  output_pin: gpio.25
+  enable_pin: I2SO.17
+  disable_with_s0: false
+  s0_with_disable: true
+  spinup_ms: 0
+  spindown_ms: 0
+  tool_num: 0
+  speed_map: 0=0.000% 3500=100.000%
