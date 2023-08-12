@@ -1,4 +1,3 @@
-
 ---
 title: About
 description: Root Controller ISO About
@@ -8,6 +7,7 @@ tags: cnc controller, root controller, motion controller, isolation
 editor: markdown
 dateCreated: 2022-02-25T22:12:57.077Z
 ---
+
 
 # Introduction
 <img align="right" width=100 src="https://raw.githubusercontent.com/RootCNC/Root-Controller-ISO/master/Media/R_Logo.png" />
