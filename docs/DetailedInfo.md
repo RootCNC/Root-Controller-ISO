@@ -1,3 +1,4 @@
+
 ---
 title: About
 description: Root Controller ISO About
@@ -29,6 +30,9 @@ The controller is designed to isolate the key area of the design to mitigate any
 8. Dedicated **Laser output port**. 
 9. **Isolated USB**
 10. **Isolated RS485** (Modbus serial port)
+
+## Block Diagram
+![Root Controller Overview Block Diagram](https://github.com/RootCNC/Root-Controller-ISO/blob/master/Media/RootControllerRev3_Overview.png?raw=true)
 
 ## Demo Video
 # Tabs {.tabset} 
