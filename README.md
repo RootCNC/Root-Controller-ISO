@@ -19,6 +19,9 @@ The controller is designed to isolate the key area of the design to mitigate any
 9. **Isolated USB**
 10. **Isolated RS485** (Modbus serial port)
 
+## Block Diagram
+![Root Controller Overview Block Diagram](https://github.com/RootCNC/Root-Controller-ISO/blob/master/Media/RootControllerRev3_Overview.png?raw=true)
+
 ## Purchase
 The Root Controller ISO can be purchased on the Root CNC store
 [GOTO SHOP](https://rootcnc.com/product-category/electronics/)
