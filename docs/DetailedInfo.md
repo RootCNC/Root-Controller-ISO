@@ -646,6 +646,9 @@ All versions of the Root Controller ISO offer the isolated RS485 interface
 
 > Please note this interface will not work unless externally powered {.warning}
 
+Here is an example of the wiring for the RS485 interface on a huanyang VFD
+
+<img src="../Media/huanyang_rs485.jpeg" width="600">
 
 # SD CARD
 
